@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Button, Table } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import Modals from "./Detail";
 const TableData = () => {
   const [product, setProduct] = useState([]);
   const navigate = useNavigate();
@@ -79,6 +80,7 @@ const TableData = () => {
                   >
                     Delete
                   </Button>
+                  <Modals name={tkn.name} price={tkn.price} />
                   <Link to={`/detail/${tkn.id}`}>
                     <Button variant="info">Update Product</Button>
                   </Link>
