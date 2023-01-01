@@ -8,7 +8,7 @@ git clone https://github.com/sanihamdhani/inditama-Crud.git
 ```
 ## Masuk Direktori
 ```sh
-cd crud
+cd inditama-Crud-main
 ```
 ## Install Modul
 ```sh
